@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url('https://www.sathyabama.ac.in/sites/default/files/inline-images/DJI_0105-New-Low.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  margin-top: 130px;
+  width: 25%;
+  padding: 10px;
+  background:transparent;
+  border: 2px solid white;
+  border-radius: 15px;
+  align-items: center;
+  margin-left: 500px;
+}
+#submit {
+  border: 30px;
+  padding: 10px;
+  background: saddlebrown;
+  color: white;
+  margin-top: 25px;
+  width: 85%;
+  margin-left: 20px;
+}
+.select {
+  padding:10px;
+  width:85%;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.signin {
+  margin-left: 22px;
+}
+</style>
+</head>
+<body>
+<form action="login" method="post">
+  <div class="container">
+    <select class="select" name="role" style="width:91%;">
+      <option value="Student">Student</option>
+      <option value="Mentor">Mentor</option>
+    </select><br>
+    <label><p style="margin-left:20px;margin-bottom:5px;">Username:</p></label><br>
+    <input type="text" name="username" placeholder="Username" class="select" required><br>
+    <label><p style="margin-left:20px;margin-bottom:5px;">Password:</p></label><br>
+    <input type="password" name="password" placeholder="Password" class="select" required><br>
+    <input type="submit" value="Login" id="submit" style="width:91%;">
+    <p class="signin">New User? <a href="signup.html" style="text-decoration:none;">Sign Up</a></p>
+  </div>
+</form>
+</body>
+</html>

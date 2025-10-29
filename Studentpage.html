@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Page</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  background: url('https://images.squarespace-cdn.com/content/v1/5fc463b9df132613bbd422a5/1607557512251-FJIUNZCOFWUS5RBXGIS0/Graduations%20Now%20Blog%20Where%20to%20buy%20a%20graduation%20hat.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box {
+  margin-top: 130px;
+  width: 35%;
+  padding: 10px;
+  color: white;
+  margin-left: 120px;
+}
+.select {
+  padding:10px;
+  width:85%;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+</style>
+</head>
+<body>
+<form action="submitProject" method="post">
+<div class="box" style="color:black;">
+  <label><p style="margin-left:20px;margin-bottom:5px;">Team Name:</p></label>
+  <input type="text" name="team_name" placeholder="Team Name" class="select" required><br>
+  <label><p style="margin-left:20px;margin-bottom:5px;">Team Members:</p></label>
+  <input type="text" name="member1_name" placeholder="Member 1" class="select"><br>
+  <input type="text" name="member2_name" placeholder="Member 2" class="select"><br>
+  <input type="text" name="member3_name" placeholder="Member 3" class="select"><br>
+
+  <label><p style="margin-left:20px;margin-bottom:5px;">Reg No:</p></label>
+  <input type="text" name="member1_regno" placeholder="RegNo 1" class="select"><br>
+  <input type="text" name="member2_regno" placeholder="RegNo 2" class="select"><br>
+  <input type="text" name="member3_regno" placeholder="RegNo 3" class="select"><br>
+</div>
+<div class="box">
+  <label><p style="margin-left:20px;margin-bottom:5px;">Project Title:</p></label>
+  <input type="text" name="project_title" placeholder="Project Title" class="select" required><br>
+  <label><p style="margin-left:20px;margin-bottom:5px;">Description:</p></label>
+  <textarea name="project_description" rows="4" cols="50" class="select" style="height:100px;" required></textarea><br>
+  <label><p style="margin-left:20px;margin-bottom:5px;margin-top:5px;">Mentor:</p></label>
+  <select name="chosen_mentor_id" class="select" style="width:91%;" required>
+    <option value="">Select</option>
+    <option value="1">Dr.Senthilnayagam</option>
+    <option value="2">Dr.Abitha Memala</option>
+    <option value="3">Dr.Kavitha</option>
+  </select><br>
+  <button type="submit" style="margin-top:15px;margin-left:40%;">Submit</button>
+</div>
+</form>
+</body>
+</html>
